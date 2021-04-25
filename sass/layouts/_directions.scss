@@ -1,5 +1,11 @@
 .directions {
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    --grid__item: 3;
+  }
 }
 
 .direction__thumb {
