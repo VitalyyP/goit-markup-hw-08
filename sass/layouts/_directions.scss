@@ -1,0 +1,26 @@
+.directions {
+  padding-top: 0;
+}
+
+.direction__thumb {
+  position: relative;
+}
+.direction__lable {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--lite-bg-color);
+}
+
+.direction__text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

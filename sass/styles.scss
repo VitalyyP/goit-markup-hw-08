@@ -1,0 +1,103 @@
+@import "./vendors/modern-normalize";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
+@import "./components/button";
+@import "./components/button-close";
+@import "./components/logo";
+@import "./components/card";
+@import "./components/filter";
+@import "./components/main-nav";
+@import "./components/team-member";
+@import "./components/site-nav";
+@import "./components/auth-nav";
+@import "./components/address";
+@import "./components/social-list";
+@import "./components/clients-item";
+@import "./components/subscribe";
+@import "./components/form";
+@import "./components/form-checkbox";
+@import "./components/social-item";
+@import "./components/modal";
+@import "./components/page-title";
+@import "./components/section-title";
+@import "./layouts/grid";
+@import "./layouts/section";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/benefits";
+@import "./layouts/directions";
+@import "./layouts/team";
+@import "./layouts/footer";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.socials {
+  padding-top: 12px;
+  color: var(--lite-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-link:hover .card,
+.portfolio-link:focus .card {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  color: inherit;
+}
+
+.portfolio-link:hover .card__overlay,
+.portfolio-link:focus .card__overlay {
+  transform: translateY(-100%);
+}
+
+
+

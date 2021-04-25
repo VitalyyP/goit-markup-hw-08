@@ -1,0 +1,19 @@
+.address {
+  font-style: normal;
+}
+
+.address__item {
+
+  &:first-child {
+    color: var(--lite-bg-color);
+  }
+  
+  &:not(:first-child) {
+    color: #acacb0;
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+ 
+}

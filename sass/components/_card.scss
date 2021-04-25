@@ -1,0 +1,46 @@
+.card {
+  transition: box-shadow var(--transition);
+}
+
+.card__discription {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform var(--transition);
+  color: var(--lite-bg-color);
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.card__label {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.card__discription {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
