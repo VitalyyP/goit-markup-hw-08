@@ -10,8 +10,8 @@
 <body>
     <header class="header">
       <div class="container content-in-row">
-        <nav class="main-nav">
-          <a class="logo logo--header link" href="../index.html">Web<span class="logo__last-part-dark">Studio</span></a>
+        <a class="logo logo--header link" href="../index.html">Web<span class="logo__last-part-dark">Studio</span></a>
+        <nav class="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link" href="../index.html">Студия</a></li>
             <li class="site-nav__item"><a class="site-nav__link link" href="./html/portfolio.html">Портфолио</a></li>
@@ -36,6 +36,12 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false" aria-label="Переключатель мобильного меню">
+          <svg width="40" height="40">
+            <use class="menu-button__icon-menu" href="./images/sprite.svg#icon-menu40"></use>
+            <use class="menu-button__icon-cross" href="./images/sprite.svg#icon-close40"></use>
+          </svg>
+        </button>
       </div>
     </header>
      
@@ -308,7 +314,7 @@
       <div class="container">
         <div class="grid">
           <div class="grid__item grid__item--half">
-            <ul class="list grid">
+            <ul class="contact-us list grid">
               <li class="grid__item grid__item--half">
                 <a href="./" class="logo logo--footer link">Web<span class="logo__last-part-light">Studio</span></a>
                 <address class="address">
@@ -417,6 +423,7 @@
       </button>
     </div>
   </div>
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>

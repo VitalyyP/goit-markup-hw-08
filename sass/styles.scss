@@ -23,6 +23,9 @@
 @import "./components/modal";
 @import "./components/page-title";
 @import "./components/section-title";
+@import "./components/socials";
+@import "./components/contact-us";
+@import "./components/menu-button";
 @import "./layouts/grid";
 @import "./layouts/section";
 @import "./layouts/header";
@@ -59,10 +62,7 @@
 
 
 
-.socials {
-  padding-top: 12px;
-  color: var(--lite-bg-color);
-}
+
 
 
 

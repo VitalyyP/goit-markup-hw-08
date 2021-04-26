@@ -2,6 +2,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-bg-color);
+
+  text-align: center;
+  
+  @media  screen and (min-width: 1200px) {
+    --grid__item: 2;
+    text-align: left;
+    
+  }
 }
 
 .footer__call {
