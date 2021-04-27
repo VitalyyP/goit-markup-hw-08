@@ -17,27 +17,37 @@
 }
 
 .modal {
-
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%);
+  padding: 40px;
   background: var(--lite-bg-color);
-  width: calc((100% - 30px) / 2);
-  max-width: 528px;
-  height: 581px;
-  padding-top: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--transition);
-  
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(1.1);
+
+  @media screen and (min-width: 768px) {
+    top: 208px;
+    
   }
+    
+  @media  screen and (min-width: 1200px) {  
+    top: 50%;
+    
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    // height: 581px;
+    transition: transform var(--transition);
+  
+    
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
 }
 
 .modal__title {

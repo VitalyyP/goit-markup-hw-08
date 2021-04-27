@@ -1,8 +1,13 @@
 .form-checkbox {
   position: relative;
-  padding-left: 35px;
+  padding-left: 24px;
   margin-bottom: 30px;
   text-align: left;
+  
+  @media screen and (min-width: 1200px) {
+    padding-left: 35px;
+    
+  }
 }
 
 .form-checkbox__input {
@@ -15,15 +20,25 @@
 .form-checkbox__label {
   color: var(--main-text-color);
 
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
   &::after {
     position: absolute;
     top: 4px;
-    left: 11px;
+    left: 0;
     content: "";
     display: block;
     width: 16px;
     height: 15px;
     background-image: url("../images/icons/checkbox.svg");
+    
+    @media screen and (min-width: 1200px) {
+      left: 11px;
+      
+    }
   }
     
   .form-checkbox__input:checked + &::after {
