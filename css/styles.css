@@ -392,7 +392,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid blue;
 }
 
 @media screen and (min-width: 480px) {
@@ -448,7 +447,7 @@ p {
   border: 1px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .button--email {
     margin-left: auto;
     margin-right: auto;
@@ -597,8 +596,28 @@ p {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .filter__item:nth-child(2) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__item:not(:last-child) {
@@ -607,7 +626,7 @@ p {
 
 .menu-container {
   width: 100%;
-  outline: 1px solid red;
+  z-index: 9;
 }
 
 @media screen and (max-width: 767px) {
@@ -929,7 +948,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .subscribe__input {
     margin-bottom: 20px;
   }
@@ -1259,6 +1278,18 @@ p {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --grid__item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --grid__item: 3;
+  }
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -1287,6 +1318,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  z-index: -1000;
 }
 
 .header-page {
