@@ -7,7 +7,7 @@
   
 .auth-nav__item:last-child {
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     position: absolute;
     left: 40px;
     bottom: 194px;
@@ -15,22 +15,17 @@
     color: var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     margin-left: -3px;
   }
 }
 
 .auth-nav__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     position: absolute;
     left: 40px;
     bottom: 134px;
     font-size: 24px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -43,23 +38,29 @@
   display: flex;
   align-items: center;
   
-
-  @media screen and (max-width: 767px) {
-    
+  @media screen and (max-width: 767.98px) {
     line-height: 1.18;
     font-size: inherit;
   }
-  // padding-top: 31.5px;
-  // padding-bottom: 31.5px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 31.5px;
+    padding-bottom: 31.5px;
+  }
 }
 
 
 .auth-nav__icon {
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
-
+  
   width: 16px;
   height: 16px;
   margin-right: 10px;

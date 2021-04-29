@@ -14,12 +14,9 @@
   }
 }
 
-.filter__item:nth-child(2) {
+.filter__item:not(:last-child) {
+  margin-right: 8px;
   @media screen and (max-width: 678px) {
     margin-bottom: 15px;
   }
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }

@@ -7,10 +7,12 @@
 }
 
 .header-page {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 59px;
+  z-index: 0;
   
   @media screen and (min-width: 768px) {
     height: 79px;
