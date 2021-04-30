@@ -628,7 +628,7 @@ p {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1199.98px) {
   .filter__item:not(:last-child) {
     margin-bottom: 15px;
   }
