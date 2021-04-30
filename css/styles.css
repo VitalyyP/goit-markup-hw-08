@@ -644,10 +644,9 @@ p {
     display: none;
     top: 0;
     left: 0;
-    height: calc(100vh - 20px);
+    height: 100vh;
     background-color: var(--lite-bg-color);
     padding: 48px 40px;
-    max-height: 796px;
     min-height: 500px;
   }
   .menu-container.is-open {
